@@ -42,7 +42,7 @@ public class DoctorSearchKvberlinApplication {
 
 		for (char c = 'A'; c <= 'Z'; ++c) {
 			String url = "https://www.kvberlin.de/typo3conf/ext/arztsuche/Classes/Controller/connector_ind.php"
-					+ "?url=52.520008/13.404954/40.json?n=" + c + "&fg=470";
+					+ "?url=52.520008%2F13.404954%2F40.json%3Fn%3D" + c + "%26fg%3D470";
 			Request request = new Request.Builder().url(url).build();
 			System.out.println(url);
 
